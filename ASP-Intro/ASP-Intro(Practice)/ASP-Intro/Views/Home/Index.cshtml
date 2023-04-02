@@ -1,0 +1,34 @@
+﻿@model int[]
+
+@{
+    int number = 10;
+    List<string> names = new List<string>() { "Chinara", "Roya", "Konul" };
+}
+<h3>Home page</h3>
+<section>
+    <div>
+        <h2 style="color:red">Started Backend</h2>
+        <span>
+            @number
+        </span>
+        <ul>
+            @for (int i = 1; i < 14; i++)
+            {
+                <li>@number</li>
+                number++;
+            }
+            @foreach (var item in names)
+            {
+                <li>@item</li>
+            }
+        </ul>
+        @foreach (var item in Model)
+        {
+            <h6>@item</h6>
+        }
+    </div>
+</section>
+
+<script>
+    console.log("sasasa");
+</script>
